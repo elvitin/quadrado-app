@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2021" /* Define em qual versão do EcmaScript o JavaScript será transpilado */,
+    "lib": [
+      "ES2021"
+    ] /* Descreve qual as bibliotecas padrões serão usadas no projeto. */,
+    "module": "commonjs" /* Define o tipo de importação em que o código .js será gerado, sendo CommonJs recomendado para o NodeJs */,
+    "rootDir": "./src" /* Especifica a raiz onde está o código fonte, onde estão os arquivos .ts à ser transpilado */,
+    "outDir": "dist" /* Especifica o diretório de saída, onde os arquivos .js serão salvos */,
+    "removeComments": true /* Durante a transpilação, remove os comentários */,
+    "noEmitOnError": true /* Os arquivos .js nunca serão emitidos ser houver algum tipo de erro no código */,
+    "forceConsistentCasingInFileNames": true /* Força a concistência de Casing nas importações */,
+  },
+  "include": [
+    "./src/**/*",
+  ] /* já fora das opções de compilação, o include define exclusivamente quais pastas devem ser analisadas pelo analisador de TypeScript, ou seja, quais pastas devem ser rastreadas */,
+  "exclude": [
+    "node_modules",
+    "coverage",
+    "dist"
+  ] /* Já o exclude define quais pastas devem ser excluídas da análise, essas pastas não serão rastreadas */
+}
